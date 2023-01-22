@@ -1,48 +1,34 @@
 import React, { useRef, useEffect } from 'react';
-import { Button, StyleSheet, View } from 'react-native';
+import { Button, StyleSheet, View, Text } from 'react-native';
 import LottieView from 'lottie-react-native';
 
-export default function App() {
-  const animation = useRef(null);
-  useEffect(() => {
-    // You can control the ref programmatically, rather than using autoPlay
-    // animation.current?.play();
-  }, []);
-
+const TitleView = () => {
   return (
-    <View style={styles.animationContainer}>
-      <LottieView
-        autoPlay
-        ref={animation}
-        style={{
-          width: 200,
-          height: 200,
-          backgroundColor: '#eee',
-        }}
-        // Find more Lottie files at https://lottiefiles.com/featured
-        source={require('./assets/loadyboi.json')}
-      />
-      <View style={styles.buttonContainer}>
-        <Button
-          title="Restart Animation"
-          onPress={() => {
-            animation.current?.reset();
-            animation.current?.play();
-          }}
-        />
-      </View>
+    <View style={styles.container}>
+      <Text style={styles.header}>Welcome to Bored</Text>
+      <Text style={styles.subtitle}>The app designed to make you more Bored.</Text>
     </View>
-  );
-}
+  )
+};
 
-const styles = StyleSheet.create({
-  animationContainer: {
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+const styles = {
+  header: {
+      fontSize: 24,
+      fontWeight: 'bold',
+      textAlign: 'center',
+      marginTop: 20
+  },
+  subtitle: {
+      fontSize: 18,
+      textAlign: 'center',
+      marginTop: 10,
+      color: 'gray'
+  },
+  container: {
     flex: 1,
-  },
-  buttonContainer: {
-    paddingTop: 20,
-  },
-});
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+};
+
+export default TitleView;
