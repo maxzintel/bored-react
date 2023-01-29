@@ -7,6 +7,7 @@ import {TouchableOpacity} from 'react-native';
 
 import TitleScreen from './screens/TitleScreen';
 import QuestionnaireScreen from './screens/QuestionnaireScreen';
+import TerminatorScreen from './screens/TerminatorScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -16,6 +17,7 @@ function App() {
       <Stack.Navigator>
         <Stack.Screen name="Title" component={TitleScreen} />
         <Stack.Screen name="Questionnaire" component={QuestionnaireScreen} />
+        <Stack.Screen name="Terminator" component={TerminatorScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

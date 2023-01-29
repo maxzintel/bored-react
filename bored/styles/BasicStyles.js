@@ -1,6 +1,6 @@
 export const styles = {
   header: {
-      fontSize: 24,
+      fontSize: 42,
       fontWeight: 'bold',
       textAlign: 'center',
       marginTop: 20,
@@ -12,6 +12,14 @@ export const styles = {
       marginTop: 10,
       color: '#6CB1B4',
       fontWeight: 'bold',
+  },
+  question: {
+    fontSize: 28,
+    textAlign: 'left',
+    marginTop: 10,
+    marginLeft: 18,
+    color: '#6CB1B4',
+    fontWeight: 'bold',
   },
   container: {
     backgroundColor: '#302F4D',
@@ -48,5 +56,15 @@ export const styles = {
     marginTop: 20,
     borderRadius: 5,
     alignSelf: 'center'
+  },
+  progressBar: {
+    backgroundColor: '#ddd',
+    height: 20,
+    borderRadius: 10,
+    overflow: 'hidden',
+  },
+  progressBarFill: {
+    backgroundColor: '#4DB6AC',
+    height: '100%',
   },
 };
