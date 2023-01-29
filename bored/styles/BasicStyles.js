@@ -3,29 +3,50 @@ export const styles = {
       fontSize: 24,
       fontWeight: 'bold',
       textAlign: 'center',
-      marginTop: 20
+      marginTop: 20,
+      color: '#CCC7B9'
   },
   subtitle: {
       fontSize: 18,
       textAlign: 'center',
       marginTop: 10,
-      color: 'gray'
+      color: '#6CB1B4',
+      fontWeight: 'bold',
   },
   container: {
+    backgroundColor: '#302F4D',
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
   },
   button: {
-    backgroundColor: 'blue',
+    backgroundColor: '#00A3F5',
     padding: 10,
     marginTop: 20,
     borderRadius: 5,
     alignSelf: 'center'
   },
   buttonText: {
-    color: 'white',
+    color: '#CCC7B9',
     fontWeight: 'bold',
     textAlign: 'center'
+  },
+  yesButton: {
+    backgroundColor: '#00A3F5',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    padding: 10,
+    marginTop: 20,
+    borderRadius: 5,
+    alignSelf: 'center'
+  },
+  noButton: {
+    backgroundColor: '#AF7A6D',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    padding: 10,
+    marginTop: 20,
+    borderRadius: 5,
+    alignSelf: 'center'
   },
 };
