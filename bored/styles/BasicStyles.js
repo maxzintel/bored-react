@@ -57,14 +57,4 @@ export const styles = {
     borderRadius: 5,
     alignSelf: 'center'
   },
-  progressBar: {
-    backgroundColor: '#ddd',
-    height: 20,
-    borderRadius: 10,
-    overflow: 'hidden',
-  },
-  progressBarFill: {
-    backgroundColor: '#4DB6AC',
-    height: '100%',
-  },
 };
